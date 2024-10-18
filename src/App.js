@@ -30,11 +30,13 @@ class App extends Component {
           toggleTheme: this.toggleTheme,
         }}
       >
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route component={NotFound} />
-        </Switch>
+        <div className="main-div">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route component={NotFound} />
+          </Switch>
+        </div>
       </ThemeContext.Provider>
     )
   }

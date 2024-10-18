@@ -42,3 +42,9 @@
 .link {
   text-decoration: none;
 }
+.light-nav-main-container {
+  background-color: white;
+}
+.dark-nav-main-container {
+  background-color: black;
+}

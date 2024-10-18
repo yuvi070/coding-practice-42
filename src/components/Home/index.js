@@ -10,10 +10,14 @@ const Home = () => (
       {value => {
         const {isDarkTheme} = value
         const ShowDarkBackground = isDarkTheme ? 'bg-dark' : 'bg-light'
+        const showTextColor = isDarkTheme ? 'dark-text' : 'light-text'
+        const showHomeImage = isDarkTheme
+          ? 'https://assets.ccbp.in/frontend/react-js/home-dark-img.png'
+          : 'https://assets.ccbp.in/frontend/react-js/home-light-img.png'
         return (
-          <div className="home-container">
-            <img src="" alt="" className="" />
-            <h1>Home</h1>
+          <div className={`home-container ${ShowDarkBackground}`}>
+            <img src={showHomeImage} alt="" className="center-main-image" />
+            <h1 className={showTextColor}>Home</h1>
           </div>
         )
       }}

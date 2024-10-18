@@ -17,26 +17,31 @@ const Navbar = () => (
       const showNavBackgroundColor = isDarkTheme
         ? 'dark-navbar'
         : 'light-navbar'
+      const showNavMainContainer = isDarkTheme
+        ? 'dark-nav-main-container'
+        : 'light-nav-main-container'
       const onClickChangeTheme = () => {
         toggleTheme()
       }
       return (
-        <div className={`nav-container ${showNavBackgroundColor}`}>
-          <img src={showLogoImage} alt="logo-image" className="logo-icon" />
-          <ul className="navigation-controllers">
-            <Link to="/" className="link">
-              <li className={showTextColour}>Home</li>
-            </Link>
-            <Link to="/about" className="link">
-              <li className={showTextColour}>About</li>
-            </Link>
-          </ul>
-          <img
-            src={showIconImage}
-            alt=""
-            onClick={onClickChangeTheme}
-            className="logo-icon1"
-          />
+        <div className={showNavMainContainer}>
+          <div className={`nav-container ${showNavBackgroundColor}`}>
+            <img src={showLogoImage} alt="logo-image" className="logo-icon" />
+            <ul className="navigation-controllers">
+              <Link to="/" className="link">
+                <li className={showTextColour}>Home</li>
+              </Link>
+              <Link to="/about" className="link">
+                <li className={showTextColour}>About</li>
+              </Link>
+            </ul>
+            <img
+              src={showIconImage}
+              alt=""
+              onClick={onClickChangeTheme}
+              className="logo-icon1"
+            />
+          </div>
         </div>
       )
     }}

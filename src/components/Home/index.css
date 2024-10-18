@@ -1,8 +1,20 @@
 /* Write your CSS here */
 .home-container {
-  height: 85vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.bg-dark {
+  background-color: black;
+}
+.dark-text {
+  color: white;
+}
+.light-text {
+  color: black;
+}
+.center-main-image {
+  width: 250px;
 }
