@@ -1,0 +1,44 @@
+/* Write your CSS here */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  padding: 10px;
+}
+.logo-icon {
+  width: 60px;
+}
+
+.logo-icon1 {
+  width: 40px;
+}
+.navigation-controllers {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 10%;
+}
+.dark-navbar {
+  background-color: #333333;
+}
+.light-navbar {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.light-color {
+  text-decoration: none;
+  color: black;
+}
+.dark-color {
+  text-decoration: none;
+  color: white;
+}
+.link {
+  text-decoration: none;
+}

@@ -1,0 +1,8 @@
+/* Write your CSS here */
+.home-container {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
